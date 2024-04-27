@@ -1,4 +1,4 @@
-<img src="assets/ccvm_logo.png" />
+<img src="assets/ccvm_logo_black.png" />
 
 # CC Virtual Machine
 This repository contains the sourcecode for the CC Virtual Machine (CCVM). CCVM
