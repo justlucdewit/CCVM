@@ -1,0 +1,8 @@
+PROJECT_NAME = CC Virtual Machine
+
+OUTPUT_DIRECTORY = ./docs
+INPUT = ./src/include ./src/sources
+EXTRACT_STATIC = YES
+EXTRACT_PRIVATE = YES
+EXTRACT_ALL = YES
+# INPUT += ./doc_pages/ccvmm.md
