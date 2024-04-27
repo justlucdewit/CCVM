@@ -6,6 +6,30 @@
 #include <stdlib.h>
 #include <stdint.h>
 
+/// @brief The structure representing a stack data structure
+typedef struct ccvm_stack {
+    /**
+     * @brief A pointer to an array of integers that represents the stack data structure.
+     * 
+     * This pointer points to the beginning of an array of integers that represents
+     */
+    uint64_t* data;
+
+    /**
+     * @brief The capacity of the stack.
+     * 
+     * This variable specifies the maximum number of elements that the stack can hold currently. It will automatically resize if the stack is full.
+     */
+    size_t capacity;
+
+    /**
+     * @brief The length of the stack.
+     * 
+     * This variable specifies the number of elements currently in the stack.
+     */
+    size_t length;
+} ccvm_stack;
+
 /**
  * @brief The structure representing the entire cc virtual machine and all its
  * state and memory.
@@ -58,6 +82,19 @@ typedef struct ccvm_virtual_machine {
      * The registers are named A, B, C, and D
      */
     uint64_t registers[4];
+
+    /**
+     * @brief The stack used by the virtual machine for storing intermediate values.
+     * 
+     * This stack is used by the virtual machine for storing intermediate values
+     * during program execution. It is a simple stack data structure that can
+     * hold integers.
+     */
+    ccvm_stack stack;
 } ccvm_virtual_machine;
+
+/// @brief Function that creates an instance of the virtual machine
+/// @return A pointer to the newly created virtual machine
+ccvm_virtual_machine* ccvm_create_vm();
 
 #endif
