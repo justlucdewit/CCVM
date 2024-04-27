@@ -1,3 +1,5 @@
+<img src="assets/ccvm_logo.png" />
+
 # CC Virtual Machine
 This repository contains the sourcecode for the CC Virtual Machine (CCVM). CCVM
 is a bytecode interpreter (similar to JVM for java) created by Luc de Wit meant
