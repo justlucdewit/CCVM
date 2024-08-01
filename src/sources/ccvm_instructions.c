@@ -28,7 +28,7 @@ void ccvm_instruction_mov_mem_literal(ccvm_virtual_machine* vm) {
     uint64_t memory_address = ccvm_get_next_u64(vm);
     uint64_t value = ccvm_get_next_u64(vm);
 
-    // set the value at the memory address
+    // set the value at the memory address sdfsdf
     *((uint64_t*)memory_address) = value;
 }
 
